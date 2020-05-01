@@ -8,7 +8,7 @@ COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
 # Copy scripts needed for execution
-COPY ./tc_demo2 /usr/src/tc_demo2
+COPY . /usr/src/tc_demo2
 
 # Establish a working directory
 WORKDIR /usr/src/tc_demo2
